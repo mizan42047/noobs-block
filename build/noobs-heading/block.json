@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "noobs-block/noobs-heading",
+  "version": "0.1.0",
+  "title": "Noobs Heading",
+  "category": "widgets",
+  "icon": "heading",
+  "supports": {
+    "html": true
+  },
+  "attributes": {
+    "heading_title": {
+      "type": "string",
+      "source": "attribute",
+      "default": "Grow Your Report"
+    },
+    "heading_html_tag": {
+      "type": "string",
+      "default": "h2"
+    },
+    "alignments": {
+      "type": "string",
+      "default": "none"
+    },
+    "showSubtitle": {
+      "type": "boolean",
+      "default": false
+    },
+    "subtitle": {
+      "type": "string",
+      "source": "attribute",
+      "default": "Time has changed"
+    },
+    "borderSubtitle": {
+      "type": "boolean",
+      "default": false
+    },
+    "color": {
+      "type": "string",
+      "default": ""
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "textdomain": "noobs-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "script": "file:./script.js"
+}
